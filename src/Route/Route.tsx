@@ -56,9 +56,9 @@ const router = createBrowserRouter([
         element: <AboutUs></AboutUs>,
       },
       {
-        path: '*',
-        element: <ErrorPage></ErrorPage>
-      }
+        path: "*",
+        element: <ErrorPage></ErrorPage>,
+      },
     ],
   },
   {
@@ -88,6 +88,10 @@ const router = createBrowserRouter([
       {
         path: "updateDonation/:id",
         element: <UpdateDonation></UpdateDonation>,
+      },
+      {
+        path: "*",
+        element: <ErrorPage></ErrorPage>,
       },
     ],
   },
